@@ -67,8 +67,56 @@
      </section>
  </div>
     
+<!-----x------------ Blog Carousel -----------x---->
+<section class="blog-header">
+    <div class="blog ">
+        <div class="container">
+            <div class="owl-carousel owl-theme blog-post"> <!--Owl Container Takes all the Owl Items-->
+                <div class="blog-content"> <!--THis is my first carousel item for more just copy paste it-->
+                    <img src="./img/image-1.jpg" alt="post-1">
+                    <div class="blog-title">
+                        <h3>London fashion weeks continued the evolution</h3>
+                         <a href="#">Contact</a>
+                        <span>2 minutes</span>
+                    </div>
+                </div>
+                <div class="blog-content"> 
+                    <img src="./img/image-2.jpg" alt="post-2">
+                    <div class="blog-title">
+                        <h3>London fashion weeks continued the evolution</h3>
+                         <a href="#">Contact</a>
+                        <span>2 minutes</span>
+                    </div>
+                </div>
+                <div class="blog-content"> 
+                    <img src="./img/image-2.jpg" alt="post-3">
+                    <div class="blog-title">
+                        <h3>London fashion weeks continued the evolution</h3>
+                         <a href="#">Contact</a>
+                        <span>2 minutes</span>
+                    </div>
+                </div>
+                <div class="blog-content"> 
+                    <img src="./img/image-1.jpg" alt="post-1">
+                    <div class="blog-title">
+                        <h3>London fashion weeks continued the evolution</h3>
+                         <a href="#">Contact</a>
+                        <span>2 minutes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-navigation">
+                <span class="owl-nav-prev"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+                <span class="owl-nav-next"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+            </div>
+        </div>
+    </div>
+</section>
 
 
+
+     
+    
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -83,5 +131,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+    <!--Owl-carousel for blog-->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            dots: false,  //when you set it to false then no dot bottom of carousel
+            nav: true,
+            navText: [$('.owl-navigation .owl-nav-prev'),$('.owl-navigation .owl-nav-next')]
+        });
+    </script>
+   
 </body>
 </html>

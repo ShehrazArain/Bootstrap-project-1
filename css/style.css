@@ -16,6 +16,11 @@ a:hover {
     text-decoration: none;
 }
 
+.blog-title a /*not working todo later*/
+{
+    text-decoration: none;
+}
+
 li {
     list-style: none
 }
@@ -135,3 +140,87 @@ i {
     padding: 10px 0 20px 0;
     color: white;
 }
+
+/*-----x------- Blog Carousel -------x------*/
+.blog-header {
+    background: url('../img/Project1.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;  /*-- fit full backgroud on display --*/
+}
+
+.blog .blog-post 
+{
+    padding-top: 6rem;
+}
+
+.blog-post .blog-content
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+}
+.blog-content .blog-title 
+{
+    padding: 2rem 0;
+}
+
+.blog-content .blog-title 
+{
+    padding: 2rem 1rem;
+    font-style: italic;
+    
+}
+
+.blog-content a {
+    border: 1px solid lightgreen;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 9px 25px;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+   
+    background: rgb(155, 207, 155);
+}
+
+
+.blog-content span /* 2 minutes text */
+{
+    padding-top: .5rem;
+    display: block;
+}
+
+section .container .owl-nav
+{
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*-----x---------- Not Working as Exception Start---------------x-----*/
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next
+{
+    color: gray;
+    background: transparent;
+    font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: transparent;
+    color: gray;
+}
+.owl-theme .owl-nav [class*='owl-']
+{
+    outline: none;
+}
+/*-----x---------- Not Working as Exception End---------------x-----*/
